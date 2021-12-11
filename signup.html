@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(images/background.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+main{
+    width: 50%;
+    position: fixed;
+}
+.container{
+    background: rgba(199, 199, 199, 0.856);
+    width: 500px;
+    height: 550px;
+    display:block; 
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow:5px 5px 10px rgba(94, 84, 84, 0.767);
+}
+#img-div{
+    width: fit-content;
+    margin: auto;
+}
+#img-div img{
+    width: 150px;
+    margin:20px 0px;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+input{
+    margin: 20px auto;
+    display:block;
+    width: 90%;
+    padding: 15px 5%;
+    border: 0;
+    border-radius: 50px;
+    outline: none;
+}
+.buttons{
+    width: 90%;
+    margin: auto;
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 15px 5%;
+    border: 0;
+    margin: 5px auto;
+    border-radius: 50px;
+    outline: none;
+    transition: ease .5s;
+    font-size: 16px;
+    font-weight: bold;
+}
+[type="submit"]{
+    background-color:rgba(20, 128, 128, 0.589);
+}
+[type="submit"]:hover{
+    background-color: rgba(15, 99, 99, 0.822) ;
+    color: white;
+}
+[type="reset"]{
+    width: 50%;
+    background-color: lightslategrey;
+    margin: auto;
+}
+[type="reset"]:hover{
+    background-color:  rgb(50, 58, 65);
+    color: white;
+}
+
+
+@media screen and (max-width:700px) {
+    body{
+        height:  ;
+        background: none;
+    }
+    main{
+        width: 100%;
+        position: relative;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+}
+</style>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div id="img-div">
+            <img src="images/logo.png">
+        </div>
+        <form name="f" action="#">
+            <input name="user" type="text" placeholder="UserName" autocomplete="no">
+            <input name="email" type="email" placeholder="email" >
+            <input name="password" type="text" placeholder="password">
+            <input name="pass_verif" type="text" placeholder="password confirm">
+            <div class="buttons">
+                <button type="submit">Sign up</button>
+                <button type="reset">reset</button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

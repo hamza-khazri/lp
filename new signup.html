@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    <title>Sign up</title>
+    <script src="control.js"></script>
+    <style>
+        body{
+            background: white;
+            }
+        header{
+            height: fit-content;
+        }  
+        .nav{
+            background: white;
+            position: relative;
+        }
+        .containt{
+            display: flex;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(230, 224, 221, 0.753)),url(images/takingpic.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        .leftview,.rightview{
+            width: 50%;
+        }
+        .rightview{
+            background:rgb(241, 236, 233);
+           
+        }
+        #img-cover{
+            height: 100vh;
+        }
+
+        //----------------------- right view-----------------//
+        .container{
+            width: 100%;
+        }
+        #img-div{
+            width: fit-content;
+            margin: auto;
+        }
+        #img-div img{
+            width: 150px;
+            margin:20px 0px;
+        }
+        form{
+            width: 100%;
+            height: 100%;
+        }
+        input{
+            margin: 20px auto;
+            display:block;
+            width: 80%;
+            padding: 15px 5%;
+            border: 0;
+            border-radius: .5rem;
+            outline: none;
+        }
+        .buttons{
+            width: 80%;
+            margin: auto;
+        }
+        [type="submit"],[type="reset"]{
+            display: block;
+            width: 100%;
+            padding: 15px 5%;
+            border: 0;
+            margin: 5px auto;
+            outline: none;
+            transition: ease .5s;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        [type="submit"]{
+            background-color:rgba(20, 128, 128, 0.589);
+        }
+        [type="submit"]:hover{
+            background-color: rgba(15, 99, 99, 0.822) ;
+            color: white;
+        }
+        [type="reset"]{
+            width: 50%;
+            background-color: lightslategrey;
+            margin: auto;
+        }
+        [type="reset"]:hover{
+            background-color:  rgb(50, 58, 65);
+            color: white;
+        }
+        /*--------------------mobile version--------------*/
+        @media screen and (max-width:700px) {
+
+            header{
+                background: white;
+            }
+            .container{
+                display: block;
+            }
+
+            .leftview{
+                display:none;
+                position: absolute;
+            }
+         .rightview{
+                width: 100%;
+            }
+
+        }
+                    
+</style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img class="header-img" src="images/logo.png" >
+            <div class="list">
+                <ul>
+                    <li>Home</li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                </ul>
+                <div>
+                    <a href="#">Login</a>
+                    <button>Sign up</button>
+                </div>
+            </div>
+            <div class="humberger">
+                <img id="h" onclick="openlist()" src="images/humberger.svg">
+                <img id="c" onclick="closelist()" src="images/close.svg">
+            </div>
+        </nav>
+    </header>
+    <div class="containt">
+        <div class="leftview">
+  
+        </div>
+        <div class="rightview">
+            <div class="container">
+                <div id="img-div">
+                    <img src="images/logo.png">
+                </div>
+                <form name="f" action="#">
+                    <input name="user" type="text" placeholder="UserName" autocomplete="no">
+                    <input name="email" type="email" placeholder="email" >
+                    <input name="password" type="text" placeholder="password">
+                    <input name="pass_verif" type="text" placeholder="password confirm">
+                    <div class="buttons">
+                        <button type="submit">Sign up</button>
+                        <button type="reset">reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us for more informations</p>
+        <div class="social">
+           <a href="https://www.facebook.com/hamza.khazri.319/"> <i class="fa fa-facebook" id="icon" ></i></a>
+           <a href="https://www.instagram.com/hamza_khazrri/?hl=fr"> <i class="fa fa-instagram" id="icon" ></i></a>
+           <a href="mailto:hamza20251026@gmail.com"> <i class="fa fa-envelope" id="icon"></i></a>
+           <a href="twitter.com"> <i class="fa fa-twitter" id="icon" ></i></a>
+        </div>
+        <p> © 2021 LP All rights reserved</p>
+    </footer>
+</body>
+</html>
