@@ -1,0 +1,11 @@
+
+project name : learn photography
+logo : LP
+
+
+activities :
+-learn photography ---> mobile photography - using camera - photoshop and lightroom ------> path with videos .
+-post pictures 
+-vue pictures
+-write advices --> show advices.
+
